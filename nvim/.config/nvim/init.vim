@@ -1,5 +1,6 @@
 " lua config calls
 lua require('plugins')
+lua require('statusline')
 
 
 " appearance 

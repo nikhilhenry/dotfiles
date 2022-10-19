@@ -6,7 +6,11 @@ vim.cmd [[packadd packer.nvim]]
 return require('packer').startup(function(use)
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
-
-  -- gruvbox theme
+    -- gruvbox theme
     use 'morhetz/gruvbox'
+    -- lualine
+    use {
+    'nvim-lualine/lualine.nvim',
+    requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+    }
 end)
