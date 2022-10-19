@@ -1,7 +1,7 @@
 " lua config calls
 lua require('plugins')
 lua require('statusline')
-
+lua require('keymaps')
 
 " appearance 
 colorscheme gruvbox
