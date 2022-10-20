@@ -1,7 +1,7 @@
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
-require'lspconfig'.gopls.setup{
-    capabilities = capabilities,
-    on_attach = function() 
+
+-- lsp keymapings
+local on_attach = function() 
         vim.keymap.set("n","K",vim.lsp.buf.hover, {buffer=0})
         vim.keymap.set("n","gd",vim.lsp.buf.definition, {buffer=0})
         vim.keymap.set("n","gi",vim.lsp.buf.type_definition, {buffer=0})
@@ -10,8 +10,22 @@ require'lspconfig'.gopls.setup{
         vim.keymap.set('n', ']d', vim.diagnostic.goto_next, {buffer=0})
         vim.keymap.set('n', '<space>r', vim.lsp.buf.rename, {buffer=0})
         vim.keymap.set('n', '<space>ca', vim.lsp.buf.code_action, {buffer=0})
-    end,
+end
+
+require'lspconfig'.gopls.setup{
+    capabilities = capabilities,
+    on_attach = on_attach,
 }
+
+local rt = require("rust-tools")
+local cmd = {"rustup", "run", "stable", "rust-analyzer"}
+rt.setup({
+  server = {
+    cmd = cmd,
+    capabilities = capabilities,
+    on_attach = on_attach,
+  },
+})
 
 -- Set up nvim-cmp.
 local cmp = require'cmp'

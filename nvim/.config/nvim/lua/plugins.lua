@@ -31,4 +31,5 @@ return require('packer').startup(function(use)
     use 'hrsh7th/cmp-path' -- lsp autocomplete
     use({"L3MON4D3/LuaSnip", tag = "v<CurrentMajor>.*"}) -- snippet engine
     use 'saadparwaiz1/cmp_luasnip'
+    use 'simrat39/rust-tools.nvim' -- rust lsp
 end)
