@@ -2,6 +2,7 @@
 lua require('plugins')
 lua require('statusline')
 lua require('keymaps')
+lua require('lsp')
 
 " appearance 
 colorscheme gruvbox
@@ -35,4 +36,5 @@ set nobackup
 set incsearch
 set scrolloff=8
 
-
+" autocomplete settings
+set completeopt=menu,menuone,noselect

@@ -23,4 +23,12 @@ return require('packer').startup(function(use)
         'nvim-treesitter/nvim-treesitter',
         run = ':TSUpdate'
     }
+    -- nvim-lsp config
+    use 'neovim/nvim-lspconfig' -- Configurations for Nvim LSP
+    use 'hrsh7th/nvim-cmp' -- lsp autocomplete
+    use 'hrsh7th/cmp-nvim-lsp' -- lsp autocomplete
+    use 'hrsh7th/cmp-buffer' -- lsp autocomplete
+    use 'hrsh7th/cmp-path' -- lsp autocomplete
+    use({"L3MON4D3/LuaSnip", tag = "v<CurrentMajor>.*"}) -- snippet engine
+    use 'saadparwaiz1/cmp_luasnip'
 end)
