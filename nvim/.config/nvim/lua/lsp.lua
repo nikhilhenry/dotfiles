@@ -17,6 +17,12 @@ require'lspconfig'.gopls.setup{
     on_attach = on_attach,
 }
 
+require'lspconfig'.clangd.setup{
+    capabilities = capabilities,
+    on_attach = on_attach,
+}
+
+
 local rt = require("rust-tools")
 local cmd = {"rustup", "run", "stable", "rust-analyzer"}
 rt.setup({
