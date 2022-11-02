@@ -22,6 +22,10 @@ require'lspconfig'.clangd.setup{
     on_attach = on_attach,
 }
 
+require'lspconfig'.pyright.setup{
+    capabilities = capabilities,
+    on_attach = on_attach,
+}
 
 local rt = require("rust-tools")
 local cmd = {"rustup", "run", "stable", "rust-analyzer"}
