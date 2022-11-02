@@ -3,6 +3,7 @@ lua require('plugins')
 lua require('statusline')
 lua require('keymaps')
 lua require('lsp')
+lua require('ts')
 
 " appearance 
 colorscheme gruvbox
