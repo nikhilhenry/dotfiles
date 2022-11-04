@@ -18,11 +18,15 @@ return require('packer').startup(function(use)
       'nvim-telescope/telescope.nvim', tag = '0.1.x',
       requires = { {'nvim-lua/plenary.nvim'} }
     }
-    -- telescope
+    -- nvim-treesitter 
     use {
         'nvim-treesitter/nvim-treesitter',
         run = ':TSUpdate'
     }
+    -- rust-tools to make me my rust experience better and official
+    use 'rust-lang/rust.vim'
+    -- treesitter-context
+    use 'nvim-treesitter/nvim-treesitter-context'
     -- nvim-lsp config
     use 'neovim/nvim-lspconfig' -- Configurations for Nvim LSP
     use 'hrsh7th/nvim-cmp' -- lsp autocomplete

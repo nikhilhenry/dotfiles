@@ -39,3 +39,8 @@ set scrolloff=8
 
 " autocomplete settings
 set completeopt=menu,menuone,noselect
+
+" setting for rust.vim
+syntax enable
+filetype plugin indent on
+let g:rustfmt_autosave = 1

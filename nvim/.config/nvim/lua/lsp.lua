@@ -28,15 +28,15 @@ require'lspconfig'.pyright.setup{
     on_attach = on_attach,
 }
 
-local rt = require("rust-tools")
-local cmd = {"rustup", "run", "stable", "rust-analyzer"}
-rt.setup({
-  server = {
-    cmd = cmd,
-    capabilities = capabilities,
-    on_attach = on_attach,
-  },
-})
+--local rt = require("rust-tools")
+--local cmd = {"rustup", "run", "stable", "rust-analyzer"}
+--rt.setup({
+--  server = {
+--    cmd = cmd,
+--    capabilities = capabilities,
+--    on_attach = on_attach,
+--  },
+--})
 
 -- Set up nvim-cmp.
 local cmp = require'cmp'
