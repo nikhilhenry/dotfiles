@@ -13,6 +13,7 @@ set signcolumn=yes
 highlight Normal guibg=none
 highlight ColorColumn guibg=DarkRed ctermbg=246
 let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+set guicursor=n-v-c-i:block
 
 " editor settings text
 set tabstop=4 softtabstop=4
