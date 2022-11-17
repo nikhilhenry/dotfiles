@@ -28,6 +28,21 @@ require'lspconfig'.pyright.setup{
     on_attach = on_attach,
 }
 
+require'lspconfig'.rust_analyzer.setup{
+    on_attach=on_attach,
+}
+
+require'lspconfig'.tsserver.setup{
+    capabilities = capabilities,
+    on_attach = on_attach,
+}
+
+require'lspconfig'.tailwindcss.setup{
+    capabilities = capabilities,
+    on_attach = on_attach,
+}
+
+-- Set up rust rust-tools
 --local rt = require("rust-tools")
 --local cmd = {"rustup", "run", "stable", "rust-analyzer"}
 --rt.setup({
@@ -67,3 +82,4 @@ cmp.setup({
       { name = 'buffer' },
     })
 })
+
