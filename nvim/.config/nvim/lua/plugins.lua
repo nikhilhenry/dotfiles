@@ -10,8 +10,8 @@ return require('packer').startup(function(use)
     use 'morhetz/gruvbox'
     -- lualine
     use {
-    'nvim-lualine/lualine.nvim',
-    requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+        'nvim-lualine/lualine.nvim',
+        requires = { 'kyazdani42/nvim-web-devicons', opt = true }
     }
     -- telescope
     use {
@@ -23,7 +23,8 @@ return require('packer').startup(function(use)
         'nvim-treesitter/nvim-treesitter',
         run = ':TSUpdate'
     }
-    -- rust-tools to make me my rust experience better and official
+    use 'sbdchd/neoformat'
+    -- rust-tools to make my rust experience better and official
     use 'rust-lang/rust.vim'
     -- treesitter-context
     use 'nvim-treesitter/nvim-treesitter-context'

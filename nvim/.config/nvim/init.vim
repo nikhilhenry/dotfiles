@@ -45,3 +45,9 @@ set completeopt=menu,menuone,noselect
 syntax enable
 filetype plugin indent on
 let g:rustfmt_autosave = 1
+
+" setting for prettier
+let g:neoformat_try_node_exe = 1
+autocmd BufWritePre *.js Neoformat
+autocmd BufWritePre *.ts Neoformat
+autocmd BufWritePre *.tsx Neoformat
