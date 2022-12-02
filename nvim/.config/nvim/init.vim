@@ -1,3 +1,4 @@
+let mapleader = " "
 " lua config calls
 lua require('plugins')
 lua require('statusline')
@@ -37,7 +38,6 @@ set noswapfile
 set nobackup
 set incsearch
 set scrolloff=8
-let mapleader = " "
 
 " autocomplete settings
 set completeopt=menu,menuone,noselect
