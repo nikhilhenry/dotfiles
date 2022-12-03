@@ -18,10 +18,13 @@ return require('packer').startup(function(use)
         'nvim-telescope/telescope.nvim', tag = '0.1.x',
         requires = { {'nvim-lua/plenary.nvim'} }
     }
+    -- harpoon for project files
     use {
         'ThePrimeagen/harpoon',
         requires = { {'nvim-lua/plenary.nvim'} }
     }
+    -- practicing vim 
+    use 'ThePrimeagen/vim-be-good'
     -- nvim-treesitter 
     use {
         'nvim-treesitter/nvim-treesitter',
