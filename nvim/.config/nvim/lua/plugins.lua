@@ -25,6 +25,10 @@ return require('packer').startup(function(use)
     }
     -- practicing vim 
     use 'ThePrimeagen/vim-be-good'
+    -- lets dap!
+    use 'mfussenegger/nvim-dap'
+    use { "rcarriga/nvim-dap-ui", requires = {"mfussenegger/nvim-dap"} }
+    use { "theHamsta/nvim-dap-virtual-text" }
     -- nvim-treesitter 
     use {
         'nvim-treesitter/nvim-treesitter',
@@ -33,6 +37,8 @@ return require('packer').startup(function(use)
     use 'sbdchd/neoformat'
     -- rust-tools to make my rust experience better and official
     use 'rust-lang/rust.vim'
+    -- julia editor support
+    use 'JuliaEditorSupport/julia-vim'
     -- treesitter-context
     use 'nvim-treesitter/nvim-treesitter-context'
     -- nvim-lsp config
@@ -44,4 +50,6 @@ return require('packer').startup(function(use)
     use 'L3MON4D3/LuaSnip' -- snippet engine
     use 'saadparwaiz1/cmp_luasnip'
     use 'simrat39/rust-tools.nvim' -- rust lsp
+    -- darkside
+    use 'github/copilot.vim'
 end)

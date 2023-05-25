@@ -54,6 +54,10 @@ require'lspconfig'.prismals.setup{
     capabilities = capabilities,
     on_attach = on_attach,
 }
+require'lspconfig'.julials.setup{
+    capabilities = capabilities,
+    on_attach = on_attach,
+}
 
 -- Set up rust rust-tools
 --local rt = require("rust-tools")

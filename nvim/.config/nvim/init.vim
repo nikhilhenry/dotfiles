@@ -5,6 +5,7 @@ lua require('statusline')
 lua require('keymaps')
 lua require('lsp')
 lua require('ts')
+lua require('debugging')
 
 " appearance 
 colorscheme gruvbox
