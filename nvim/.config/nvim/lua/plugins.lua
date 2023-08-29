@@ -25,10 +25,6 @@ return require('packer').startup(function(use)
     }
     -- practicing vim 
     use 'ThePrimeagen/vim-be-good'
-    -- lets dap!
-    use 'mfussenegger/nvim-dap'
-    use { "rcarriga/nvim-dap-ui", requires = {"mfussenegger/nvim-dap"} }
-    use { "theHamsta/nvim-dap-virtual-text" }
     -- nvim-treesitter 
     use {
         'nvim-treesitter/nvim-treesitter',
