@@ -18,11 +18,6 @@ return require('packer').startup(function(use)
         'nvim-telescope/telescope.nvim', tag = '0.1.x',
         requires = { {'nvim-lua/plenary.nvim'} }
     }
-    -- harpoon for project files
-    use {
-        'ThePrimeagen/harpoon',
-        requires = { {'nvim-lua/plenary.nvim'} }
-    }
     -- practicing vim 
     use 'ThePrimeagen/vim-be-good'
     -- nvim-treesitter 
@@ -30,11 +25,6 @@ return require('packer').startup(function(use)
         'nvim-treesitter/nvim-treesitter',
         run = ':TSUpdate'
     }
-    use 'sbdchd/neoformat'
-    -- rust-tools to make my rust experience better and official
-    use 'rust-lang/rust.vim'
-    -- julia editor support
-    use 'JuliaEditorSupport/julia-vim'
     -- treesitter-context
     use 'nvim-treesitter/nvim-treesitter-context'
     -- nvim-lsp config
@@ -47,5 +37,5 @@ return require('packer').startup(function(use)
     use 'saadparwaiz1/cmp_luasnip'
     use 'simrat39/rust-tools.nvim' -- rust lsp
     -- darkside
-    use 'github/copilot.vim'
+    -- use 'github/copilot.vim'
 end)

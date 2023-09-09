@@ -42,14 +42,3 @@ set scrolloff=8
 
 " autocomplete settings
 set completeopt=menu,menuone,noselect
-
-" setting for rust.vim
-syntax enable
-filetype plugin indent on
-let g:rustfmt_autosave = 1
-
-" setting for prettier
-let g:neoformat_try_node_exe = 1
-autocmd BufWritePre *.js Neoformat
-autocmd BufWritePre *.ts Neoformat
-autocmd BufWritePre *.tsx Neoformat

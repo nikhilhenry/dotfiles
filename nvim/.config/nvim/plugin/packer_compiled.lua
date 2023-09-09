@@ -99,55 +99,20 @@ _G.packer_plugins = {
     path = "/Users/nikhilhenry/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
-  ["copilot.vim"] = {
-    loaded = true,
-    path = "/Users/nikhilhenry/.local/share/nvim/site/pack/packer/start/copilot.vim",
-    url = "https://github.com/github/copilot.vim"
-  },
   gruvbox = {
     loaded = true,
     path = "/Users/nikhilhenry/.local/share/nvim/site/pack/packer/start/gruvbox",
     url = "https://github.com/morhetz/gruvbox"
-  },
-  harpoon = {
-    loaded = true,
-    path = "/Users/nikhilhenry/.local/share/nvim/site/pack/packer/start/harpoon",
-    url = "https://github.com/ThePrimeagen/harpoon"
-  },
-  ["julia-vim"] = {
-    loaded = true,
-    path = "/Users/nikhilhenry/.local/share/nvim/site/pack/packer/start/julia-vim",
-    url = "https://github.com/JuliaEditorSupport/julia-vim"
   },
   ["lualine.nvim"] = {
     loaded = true,
     path = "/Users/nikhilhenry/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
   },
-  neoformat = {
-    loaded = true,
-    path = "/Users/nikhilhenry/.local/share/nvim/site/pack/packer/start/neoformat",
-    url = "https://github.com/sbdchd/neoformat"
-  },
   ["nvim-cmp"] = {
     loaded = true,
     path = "/Users/nikhilhenry/.local/share/nvim/site/pack/packer/start/nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
-  },
-  ["nvim-dap"] = {
-    loaded = true,
-    path = "/Users/nikhilhenry/.local/share/nvim/site/pack/packer/start/nvim-dap",
-    url = "https://github.com/mfussenegger/nvim-dap"
-  },
-  ["nvim-dap-ui"] = {
-    loaded = true,
-    path = "/Users/nikhilhenry/.local/share/nvim/site/pack/packer/start/nvim-dap-ui",
-    url = "https://github.com/rcarriga/nvim-dap-ui"
-  },
-  ["nvim-dap-virtual-text"] = {
-    loaded = true,
-    path = "/Users/nikhilhenry/.local/share/nvim/site/pack/packer/start/nvim-dap-virtual-text",
-    url = "https://github.com/theHamsta/nvim-dap-virtual-text"
   },
   ["nvim-lspconfig"] = {
     loaded = true,
@@ -184,11 +149,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/nikhilhenry/.local/share/nvim/site/pack/packer/start/rust-tools.nvim",
     url = "https://github.com/simrat39/rust-tools.nvim"
-  },
-  ["rust.vim"] = {
-    loaded = true,
-    path = "/Users/nikhilhenry/.local/share/nvim/site/pack/packer/start/rust.vim",
-    url = "https://github.com/rust-lang/rust.vim"
   },
   ["telescope.nvim"] = {
     loaded = true,
