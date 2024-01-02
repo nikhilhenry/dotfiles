@@ -41,3 +41,6 @@ export PATH="$PATH:/Users/nikhilhenry/.local/bin"
 eval "$(starship init zsh)"
 export STARSHIP_CONFIG=~/.config/starship/starship.toml
 
+# rpi
+alias thandai="ssh thandai@raspberrypi.local"
+alias taurus="ssh taurus@team10.local"
